@@ -36,6 +36,41 @@ inquirer.prompt([
     validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
   },
 
+  {
+    type: 'input',
+    message: 'Please list your Instructions',
+    name: 'instructions',
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+  },
+
+  {
+    type: 'input',
+    message: 'Please list your credits',
+    name: 'credits',
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+  },
+
+  {
+    type: 'list',
+    message: 'Please choose your license',
+    name: 'license',
+    choices: ['MIT', 'Apache', 'GPL'],
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+  },
+
+  {
+    type: 'input',
+    message: 'Please enter your GitHub path',
+    name: 'gitHub',
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+  },
+
+  {
+    type: 'input',
+    message: 'Please enter your email address',
+    name: 'email',
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+  }
 ]
 
 ).then((data) => {
@@ -49,8 +84,32 @@ inquirer.prompt([
   # Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contribution](#contribution)
-`;
+  * [Contribution](#contributors)
+  * [Credits](#credits)
+  * [License](#license)
+  
+  # Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contribution
+  ${data.contributors}
+
+  ### Instructions
+  ${data.instructions}
+
+  ## Credits
+  ${data.credits}
+
+  ## License
+  This application is covereed under the ${data.license} license.
+
+  # Questions
+    For questions, you may email me at the address below, or review my work in my GitHub repository.
+  * Email: ${data.email}
+  * GitHub: ${data.gitHub}`;
 
   console.log(readMe);
   fs.writeFile(filename, readMe, (err) =>
