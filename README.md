@@ -1,8 +1,8 @@
 
-  # title  [![License: Eclipse](https://img.shields.io/badge/License-Eclipse-yellow.svg)]([![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0))
+  # s  [![License: GNU/GPL](https://img.shields.io/badge/License-GNU/GPL-yellow.svg)]([![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0))
 
   # Description
-  ## description
+  ## s
 
   ## Table of Contents
   * [Installation](#installation)
@@ -12,24 +12,24 @@
   * [License](#license)
   
   ## Installation
-  installation
+  s
 
   ## Usage
-  usage
+  s
 
   ## Contribution
-  contrib
+  s
 
   ## Instructions
-  instr
+  s
 
   ## Credits
-  cred
+  s
 
   ## License
-  This application is covereed under the Eclipse license.
+  This application is covereed under the GNU/GPL license.
 
   ## Questions
     For questions, you may email me at the address below, or review my work in my GitHub repository.
-  * Email: sdsdsdsd
-  * GitHub: dsdsdsds
+  * Email: s
+  * GitHub: s
