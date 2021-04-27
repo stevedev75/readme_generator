@@ -90,7 +90,8 @@ inquirer.prompt([
     const filename = `README.md`;
     const readMe = `
   # ${data.projTitle}
-  ## [![License](https://img.shields.io/badge/License-${data.license}-yellow.svg)](${licenseLink})
+  ## [![License](https://img.shields.io/badge/License-${data.license}-yellow.svg) (${licenseLink})]
+ 
 
   # Description
   ## ${data.projDescription}
