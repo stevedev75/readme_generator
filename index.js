@@ -90,7 +90,7 @@ inquirer.prompt([
     const filename = `README.md`;
     const readMe = `
   # ${data.projTitle}
-  ## (${licenseLink})
+  ## ${licenseLink}
  
 
   # Description
