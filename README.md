@@ -1,8 +1,8 @@
 
-  # README.md Generator / [![License: Apache](https://img.shields.io/badge/License-Apache-yellow.svg)]([![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0))
+  # STeve 2:54  [![License: Apache](https://img.shields.io/badge/License-Apache-yellow.svg)]([![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0))
 
   # Description
-  ## This application helps to create a strong READE.md file quickly and efficiently.
+  ## Description 
 
   ## Table of Contents
   * [Installation](#installation)
@@ -12,24 +12,24 @@
   * [License](#license)
   
   ## Installation
-  You must install several things...
+  Installation
 
   ## Usage
-  Pease see the accompanying video  
+  Usage
 
   ## Contribution
-  Stephen Dever, sole author.  
+  Contributors
 
   ## Instructions
-  Do the following things.
+  xyz
 
   ## Credits
-  This application was developed in JavaScript.
+  uzx
 
   ## License
   This application is covereed under the Apache license.
 
   ## Questions
     For questions, you may email me at the address below, or review my work in my GitHub repository.
-  * Email: stephendever.cr@gmail.com
-  * GitHub: stevedeve75.github.com
+  * Email: steve@rmail
+  * GitHub: github
