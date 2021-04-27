@@ -19,35 +19,35 @@ inquirer.prompt([
     type: 'input',
     message: 'Please describe the Installation',
     name: 'installation',
-    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   },
 
   {
     type: 'input',
     message: 'Please describe the usage',
     name: 'usage',
-    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   },
 
   {
     type: 'input',
     message: 'Please list your Contributors',
     name: 'contribution',
-    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   },
 
   {
     type: 'input',
     message: 'Please list your Instructions',
     name: 'instructions',
-    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   },
 
   {
     type: 'input',
     message: 'Please list your credits',
     name: 'credits',
-    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   },
 
   {
@@ -55,42 +55,42 @@ inquirer.prompt([
     message: 'Please choose your license',
     name: 'license',
     choices: ['Apache', 'Eclipse', 'GNU/GPL'],
-    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   },
 
   {
     type: 'input',
     message: 'Please enter your GitHub path',
     name: 'gitHub',
-    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   },
 
   {
     type: 'input',
     message: 'Please enter your email address',
     name: 'email',
-    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
+    validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   }
 ]
 )
-.then((data) => {
-  let licenseLink = ""
-  if (data.license==="Apache") {
-   licenseLink =  "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-  }
+  .then((data) => {
+    let licenseLink = ""
+    if (data.license === "Apache") {
+      licenseLink = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
 
-  else if (data.license==="Eclipse") {
-    licenseLink = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
-  }
+    else if (data.license === "Eclipse") {
+      licenseLink = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
+    }
 
-  else if (data.license==="GNU/GPL") {
-   licenseLink = "[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
-  }
+    else if (data.license === "GNU/GPL") {
+      licenseLink = "[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    }
 
-  const filename = `README.md`;
-  const readMe = `
+    const filename = `README.md`;
+    const readMe = `
   # ${data.projTitle}
-  # https://img.shields.io/badge/License-${data.license}-yellow.svg)](${licenseLink}
+  ## [![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-yellow.svg)](${licenseLink})
 
   # Description
   ## ${data.projDescription}
@@ -125,8 +125,8 @@ inquirer.prompt([
   * Email: ${data.email}
   * GitHub: ${data.gitHub}`;
 
-  console.log(readMe);
-  fs.writeFile(filename, readMe, (err) =>
-    err ? console.log(err) : console.log('Success!')
-  );
-});
+    console.log(readMe);
+    fs.writeFile(filename, readMe, (err) =>
+      err ? console.log(err) : console.log('Success!')
+    );
+  });
