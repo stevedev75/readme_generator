@@ -83,13 +83,13 @@ inquirer.prompt([
     licenseLink = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
   }
 
-  else (data.license==="GNU/GPL"); {
+  else if (data.license==="GNU/GPL") {
    licenseLink = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
   }
 
   const filename = `README.md`;
   const readMe = `
-  # ${data.projTitle} / [![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-yellow.svg)](${licenseLink})
+  # ${data.projTitle}  [![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-yellow.svg)](${licenseLink})
 
   # Description
   ## ${data.projDescription}
