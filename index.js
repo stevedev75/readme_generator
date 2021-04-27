@@ -84,7 +84,7 @@ inquirer.prompt([
   }
 
   else if (data.license==="GNU/GPL") {
-   licenseLink = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+   licenseLink = "[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
   }
 
   const filename = `README.md`;
