@@ -32,7 +32,7 @@ inquirer.prompt([
   {
     type: 'input',
     message: 'Please list your Contributors',
-    name: 'contributors',
+    name: 'contribution',
     validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
   },
 
@@ -54,7 +54,7 @@ inquirer.prompt([
     type: 'list',
     message: 'Please choose your license',
     name: 'license',
-    choices: ['MIT', 'Apache', 'GPL'],
+    choices: ['Apache', 'Eclipse', 'GNU/GPL'],
     validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
   },
 
@@ -72,32 +72,45 @@ inquirer.prompt([
     validate: (value) => { if (value) { return true } else { return "Please enter a value to continue"  } },
   }
 ]
+)
+.then((data) => {
+  let licenseLink = ""
+  if (data.license==="Apache") {
+   licenseLink =  "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+  }
 
-).then((data) => {
+  else if (data.license==="Eclipse") {
+    licenseLink = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
+  }
+
+  else (data.license==="GNU/GPL"); {
+   licenseLink = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+  }
+
   const filename = `README.md`;
   const readMe = `
-  # ${data.projTitle} / ${data.license} License
+  # ${data.projTitle} / [![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-yellow.svg)](${licenseLink})
 
   # Description
-  # ${data.projDescription}
+  ## ${data.projDescription}
 
-  # Table of Contents
+  ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contribution](#contributors)
+  * [Contribution](#contribution)
   * [Credits](#credits)
   * [License](#license)
   
-  # Installation
+  ## Installation
   ${data.installation}
 
   ## Usage
   ${data.usage}
 
   ## Contribution
-  ${data.contributors}
+  ${data.contribution}
 
-  ### Instructions
+  ## Instructions
   ${data.instructions}
 
   ## Credits
@@ -106,7 +119,7 @@ inquirer.prompt([
   ## License
   This application is covereed under the ${data.license} license.
 
-  # Questions
+  ## Questions
     For questions, you may email me at the address below, or review my work in my GitHub repository.
   * Email: ${data.email}
   * GitHub: ${data.gitHub}`;
@@ -116,4 +129,3 @@ inquirer.prompt([
     err ? console.log(err) : console.log('Success!')
   );
 });
-
