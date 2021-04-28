@@ -60,7 +60,7 @@ inquirer.prompt([
 
   {
     type: 'input',
-    message: 'Please enter your GitHub path',
+    message: 'Please enter your GitHub URL',
     name: 'gitHub',
     validate: (value) => { if (value) { return true } else { return "Please enter a value to continue" } },
   },
