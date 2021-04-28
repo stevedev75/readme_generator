@@ -1,10 +1,10 @@
 
-  # testing 3rd badge
-  ## [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  # READEME Generator
+  ## [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
  
 
   # Description
-  ## 7
+  ## This app is a tool for developers to create a quality README very quickly.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,24 +14,24 @@
   * [License](#license)
   
   ## Installation
-  7
+  To install, run the following processes first in your terminal: 'npm init -y', 'npm i inquirer', add a .gitignore file.
 
   ## Usage
-  7
+  Please click on the included url for the walthrough video which demonstrates how to use this tool.
 
   ## Contribution
-  7
+  Stephen Dever (self)
 
   ## Instructions
-  7
+  Once the user has all required files downloaded, type 'node index.js', and the prompts requiring user input will begin. Once finished, a README.md will be generated.
 
   ## Credits
-  7
+  Developed using JavaScript
 
   ## License
-  This application is covereed under the GNU/GPL license.
+  This application is covereed under the Apache license.
 
   ## Questions
     For questions, you may email me at the address below, or review my work in my GitHub repository.
-  * Email: 7
-  * GitHub: 7
+  * Email: stephendever.cr@gmail.com
+  * GitHub: github.com/stevedev75/
