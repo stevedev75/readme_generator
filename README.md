@@ -17,7 +17,8 @@
   To install, run the following processes first in your terminal: 'npm init -y', then 'npm i inquirer', then make sure to add a '.gitignore' file.
 
   ## Usage
-  Please click on the included url for the walkthrough video which demonstrates how to use this tool.
+  Please click on the included url for the walthrough video which demonstrates how to use this tool.
+  https://drive.google.com/file/d/11Zo_PbmCxPufzzbOO1qZDSV4Rd8yIPoA/view
 
   ## Contribution
   Stephen Dever (self)
